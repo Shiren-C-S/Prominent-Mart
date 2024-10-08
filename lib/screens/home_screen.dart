@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:badges/badges.dart' as badges; // Use prefix 'badges'
+import 'package:badges/badges.dart' as badges; 
 import '../providers/product_provider.dart';
 import './search_screen.dart';
 
@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               );
             },
           ),
-          // Cart button with badge using 'badges' prefix
+
           Consumer<ProductProvider>(
             builder: (_, productProvider, child) => badges.Badge(
               badgeContent: Text(
@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Wishlist button with badge using 'badges' prefix
+         
          Consumer<ProductProvider>(
   builder: (_, productProvider, child) => badges.Badge(
     badgeContent: Text(
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Card(
-                elevation: 4, // Adds shadow to the card
+                elevation: 4,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
@@ -85,9 +85,9 @@ class HomeScreen extends StatelessWidget {
                     Expanded(
                       child: ClipRRect(
                         borderRadius: BorderRadius.vertical(
-                            top: Radius.circular(15)), // Rounded top corners
+                            top: Radius.circular(15)),
                         child: Image.asset(
-                          product.imageAsset, // Use Image.asset for local images
+                          product.imageAsset,
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) =>
                               Icon(Icons.error),
