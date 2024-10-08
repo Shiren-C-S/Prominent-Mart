@@ -1,19 +1,17 @@
 class Product {
   final String id;
   final String title;
-  final String description;
+  final String imageAsset;
   final double price;
-  final String imageUrl;
-  bool isFavorite;
+  final String description; 
+  bool isFavourite;
 
   Product({
     required this.id,
     required this.title,
-    required this.description,
+    required this.imageAsset,
     required this.price,
-    required this.imageUrl,
-    this.isFavorite = false,
+    required this.description,
+    this.isFavourite = false,
   });
-
-  void toggleFavoriteStatus() {}
 }
