@@ -1,22 +1,5 @@
 import 'package:flutter/material.dart';
-
-class Product {
-  final String id;
-  final String title;
-  final String imageAsset;
-  final double price;
-  final String description; 
-  bool isFavourite;
-
-  Product({
-    required this.id,
-    required this.title,
-    required this.imageAsset,
-    required this.price,
-    required this.description,
-    this.isFavourite = false,
-  });
-}
+import '../models/product.dart';
 
 class ProductProvider with ChangeNotifier {
   List<Product> _products = [
@@ -219,4 +202,7 @@ void toggleFavourite(Product product) {
   Product findById(String id) {
     return _products.firstWhere((product) => product.id == id); 
   }
+}
+
+  findById(String productId) {}
 }
