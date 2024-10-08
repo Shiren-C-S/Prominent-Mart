@@ -1,0 +1,32 @@
+name: mart
+description: "An app that has feature of ecommerce website"
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  http: ^1.2.2
+  fluttertoast: ^8.2.8
+  cached_network_image: ^3.4.1
+  shared_preferences: ^2.3.2
+  badges: ^3.1.2
+ 
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
