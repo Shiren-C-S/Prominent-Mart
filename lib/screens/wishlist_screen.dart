@@ -53,9 +53,9 @@ class WishlistScreen extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: ElevatedButton(
               onPressed: productProvider.wishlist.isEmpty
-                  ? null // Disable the button if wishlist is empty
+                  ? null 
                   : () {
-                      productProvider.moveAllToCart(); // Call method to move all items
+                      productProvider.moveAllToCart(); 
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text('All items moved to cart!'),
