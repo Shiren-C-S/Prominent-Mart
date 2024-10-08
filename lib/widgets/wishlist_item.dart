@@ -15,7 +15,6 @@ class WishlistItem extends StatelessWidget {
       trailing: IconButton(
         icon: const Icon(Icons.delete),
         onPressed: () {
-          // Implement removal from wishlist here if needed
         },
       ),
     );
