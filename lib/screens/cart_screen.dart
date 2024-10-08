@@ -7,11 +7,9 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final productProvider = Provider.of<ProductProvider>(context);
 
-    double totalCost = 0.0; // Initialize total cost
-
-    // Calculate total cost
-    productProvider.cart.forEach((product) {
-      totalCost += product.price; // Ensure product.price is not null
+    double totalCost = 0.0; 
+   
+    productProvider.cart.forEach((product) {// Ensure product.price is not null
     });
 
     return Scaffold(
@@ -52,7 +50,7 @@ class CartScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Total: \$${totalCost.toStringAsFixed(2)}', // Safely convert to string
+              'Total: \$${totalCost.toStringAsFixed(2)}', 
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
