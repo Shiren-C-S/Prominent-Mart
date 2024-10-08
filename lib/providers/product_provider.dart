@@ -5,7 +5,7 @@ class Product {
   final String title;
   final String imageAsset;
   final double price;
-  final String description; // Product description
+  final String description; 
   bool isFavourite;
 
   Product({
@@ -14,7 +14,7 @@ class Product {
     required this.imageAsset,
     required this.price,
     required this.description,
-    this.isFavourite = false, // Default value for isFavourite
+    this.isFavourite = false,
   });
 }
 
@@ -214,10 +214,9 @@ void toggleFavourite(Product product) {
   } else {
     wishlist.remove(product);
   }
-  notifyListeners();  // This ensures the UI updates when the wishlist changes
-}
+  notifyListeners();  
 
   Product findById(String id) {
-    return _products.firstWhere((product) => product.id == id); // Method to find a product by ID
+    return _products.firstWhere((product) => product.id == id); 
   }
 }
