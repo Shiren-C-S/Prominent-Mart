@@ -13,10 +13,10 @@ class HistoryScreen extends StatelessWidget {
         title: Text('History'),
         actions: [
           IconButton(
-            icon: Icon(Icons.delete_forever),  // Icon to clear all history
+            icon: Icon(Icons.delete_forever), 
             onPressed: () {
               if (cartItems.isNotEmpty) {
-                productProvider.clearHistory();  // Clear all history
+                productProvider.clearHistory(); 
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text('History cleared!'),
@@ -42,9 +42,9 @@ class HistoryScreen extends StatelessWidget {
                     children: [
                       Text('\$${product.price.toStringAsFixed(2)}'),
                       IconButton(
-                        icon: Icon(Icons.delete),  // Delete icon for individual items
+                        icon: Icon(Icons.delete),  
                         onPressed: () {
-                          productProvider.removeFromHistory(product);  // Remove individual item
+                          productProvider.removeFromHistory(product);  
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: Text('${product.title} removed from history!'),
