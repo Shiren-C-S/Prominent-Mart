@@ -15,7 +15,6 @@ class CartItem extends StatelessWidget {
       trailing: IconButton(
         icon: const Icon(Icons.delete),
         onPressed: () {
-          // Add functionality to remove item from cart if needed
         },
       ),
     );
